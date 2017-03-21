@@ -1,0 +1,28 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1rem;
+}
+
+.blank-col {
+  height: 7.5rem;
+}
+
+.blank-col-footer {
+  height: 2rem;
+}
+
+input {
+  font-size: 1.25rem!important;
+  font-weight: 500;
+}
+
+h4 {
+  font-weight: 100;
+}
+
+#addInput {
+  width: 100%!important;
+}
