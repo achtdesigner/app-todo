@@ -1,19 +1,23 @@
 const init = () => {
-  toDoApp.setName();
-  toDoApp.setVersion();
-  inputField.focus();
+  initAppStructure();
   if (localStorage.length > 0){
     readData(LIST_NAME);
   }
   eventWatcher();
 };
 
+const initAppStructure = () => {
+  ToDoApp.setName();
+  ToDoApp.setVersion();
+  ToDoApp.setFocusToInput();
+};
+
 const eventWatcher = () => {
 
-  inputField.addEventListener('keypress', e => {
+  ToDoApp.inputField.addEventListener('keypress', e => {
     const key = e.which || e.keyCode;
     if (key == 13) {
-      addElement(inputField.value);
+      addElement(ToDoApp.inputField.value);
     }
   });
 
@@ -38,7 +42,7 @@ const addElement = (toDoText, color='w3-red') => {
     newLi.appendChild(deleteButton);
     newLi.classList.add(color, 'w3-animate-left');
     list.insertBefore(newLi, list.childNodes[0]);
-    inputField.value = '';
+    ToDoApp.inputField.value = '';
     prepareData();
   }
 };

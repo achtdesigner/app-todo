@@ -1,5 +1,8 @@
 # app-todo
 
+NEXT FEATURE:
+- sort by color
+
 CHANGE LOG:
 * 0.0.6 - create an app object
 * 0.0.5 - save colors

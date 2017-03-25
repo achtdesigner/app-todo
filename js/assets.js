@@ -1,20 +1,22 @@
 'use strict';
 
-const inputField = document.getElementById('addInput');
-const addButton = document.getElementById('addButton');
+const LIST_NAME = 'myList';
 const list = document.getElementById('myList');
 const deleteButton = document.getElementsByClassName('w3-closebtn');
-const LIST_NAME = 'myList';
 
-let toDoApp = {
+let ToDoApp = {
   appName: 'toDo List',
-  nameConainer: document.getElementById('appName'),
+  nameContainer: document.getElementById('appName'),
   appVersion: 'v0.0.6',
-  versionConainer: document.getElementById('version'),
+  versionContainer: document.getElementById('version'),
+  inputField: document.getElementById('addInput'),
   setName: function () {
-    nameConainer.textContent = this.appName;
+    this.nameContainer.textContent = this.appName;
   },
   setVersion: function () {
-    versionConainer.textContent = this.appVersion;
+    this.versionContainer.textContent = this.appVersion;
+  },
+  setFocusToInput: function () {
+    this.inputField.focus();
   }
 };
