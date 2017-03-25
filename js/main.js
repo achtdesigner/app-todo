@@ -1,28 +1,6 @@
-'use strict';
-
-/*
- * LOG
- * 0.0.1 - lets create nodes with add button, does not save nodes
- * 0.0.2 - some design changes
- * 0.0.3 - save now to local storage and works with enter key
- * 0.0.4 - working offline
- * 0.0.5 - save colors
- *
- */
-
-const inputField = document.getElementById('addInput');
-const addButton = document.getElementById('addButton');
-const list = document.getElementById('myList');
-const deleteButton = document.getElementsByClassName('w3-closebtn');
-const versionInfo = document.getElementById('version');
-const appName = document.getElementById('appName');
-const APP_NAME = 'toDo List';
-const VERSION = 'v0.0.5';
-const LIST_NAME = 'myList';
-
 const init = () => {
-  appName.textContent = APP_NAME;
-  versionInfo.textContent = VERSION;
+  toDoApp.setName();
+  toDoApp.setVersion();
   inputField.focus();
   if (localStorage.length > 0){
     readData(LIST_NAME);
