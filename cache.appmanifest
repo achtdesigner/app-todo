@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 20170327 2254
+# 20170327 2302
 # v0.0.7
 
 CACHE:
@@ -11,14 +11,6 @@ apple-touch-icon.png
 css/lib/w3.css
 css/lib/w3-theme-blue-grey.css
 css/style.css
-css/font-awesome.min.css
 
 js/assets.js
 js/main.js
-
-fonts/FontAwesome.otf
-fonts/fontawesome-webfont.eot
-fonts/fontawesome-webfont.svg
-fonts/fontawesome-webfont.ttf
-fonts/fontawesome-webfont.woff
-fonts/fontawesome-webfont.woff2
