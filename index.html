@@ -8,24 +8,27 @@
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="stylesheet" href="css/lib/w3.css">
     <link rel="stylesheet" href="css/lib/w3-theme-blue-grey.css">
-    <!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/assets.js" defer="defer"></script>
     <script src="js/main.js" defer="defer"></script>
   </head>
-  <body>
+  <body class="w3-theme-l5">
     <header class="w3-card-4 w3-top w3-animate-opacity">
-      <div class="w3-container w3-theme w3-center w3-animate-left">
-        <h5>
-          <span id="appName"></span>
+      <div class="w3-bar w3-theme-dark w3-animate-left">
+        <div class="w3-padding-small">
+          <span id="appName" class="w3-small"></span>
           &nbsp;
-          <span id="version" class="w3-small"></span>
-        </h5>
+          <span id="version" class="w3-tiny"></span>
+        </div>
       </div>
-      <div class="w3-theme-dark w3-padding-8 w3-animate-right">
+      <div class="w3-theme-l3 w3-padding-8 w3-animate-right">
         <div class="w3-bar">
           <input id="addInput" type="text" class="w3-bar-item w3-input" placeholder="Add to list...">
         </div>
+      </div>
+      <div class="w3-bar w3-theme w3-animate-left">
+        <a id="sortList" href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-sort"></i></a>
       </div>
     </header>
     <div class="blank-col"></div>

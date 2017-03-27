@@ -7,19 +7,11 @@ body {
 }
 
 .blank-col {
-  height: 7.5rem;
-}
-
-input {
-  font-size: 1.25rem!important;
-  font-weight: 500;
-}
-
-h5 {
-  font-weight: 100;
-  margin: 6px 0;
+  height: 9.5rem;
 }
 
 #addInput {
+  font-size: 1.25rem!important;
+  font-weight: 500;
   width: 100%!important;
 }

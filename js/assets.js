@@ -7,7 +7,7 @@ const deleteButton = document.getElementsByClassName('w3-closebtn');
 let ToDoApp = {
   appName: 'toDo List',
   nameContainer: document.getElementById('appName'),
-  appVersion: 'v0.0.6',
+  appVersion: 'v0.0.7',
   versionContainer: document.getElementById('version'),
   inputField: document.getElementById('addInput'),
   setName: function () {

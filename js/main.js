@@ -24,6 +24,10 @@ const eventWatcher = () => {
   list.addEventListener('click', e => {
     togglePriority(e);
   }, false);
+
+  document.getElementById('sortList').addEventListener('click', () => {
+    sortListBy();
+  } ,false);
 };
 
 const addElement = (toDoText, color='w3-red') => {
@@ -69,6 +73,30 @@ const togglePriority = e => {
     e.target.classList.remove('w3-blue');
     e.target.classList.add('w3-green');
     e.target.dataset.color = 'w3-green';
+  }
+  prepareData();
+};
+
+const sortListBy = () => {
+  const list = document.getElementById('myList');
+  let switching = true;
+  let shouldSwitch;
+  let i;
+  while (switching) {
+    switching = false;
+    const b = list.querySelectorAll('li');
+    for (i = 0; i < (b.length - 1); i++) {
+      shouldSwitch = false;
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        shouldSwitch= true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
   }
   prepareData();
 };
