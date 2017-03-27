@@ -27,6 +27,7 @@ const eventWatcher = () => {
 
   document.getElementById('sortList').addEventListener('click', () => {
     sortListBy();
+    ToDoApp.setFocusToInput();
   } ,false);
 };
 
